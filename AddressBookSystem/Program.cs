@@ -103,11 +103,14 @@ namespace AddressBookSystem
                             }
                         }                        
                         break;
-                    case 8:
+                    case 0:
                         Console.WriteLine("Thank You For Using Address Book System.");
                         break;
+                    default:
+                        Console.WriteLine("Invalid Entry. Enter value between 0 to 7");
+                        break;
                 }
-            } while (choice != 8);
+            } while (choice != 0);
         }
     }
 }
